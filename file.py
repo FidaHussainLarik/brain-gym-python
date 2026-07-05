@@ -1,5 +1,5 @@
 print("*" *100)
-print("│                                 Working with Files                        ")
+print("                               Working with Files                        ")
 print("*" *100)
 
 
@@ -39,4 +39,6 @@ print(f"Length {len(content)}")
 # Printing first 20 characters of the file
 print("\n\nSubstring of first 20  characters from the file: ",content[:20])
 
+print("*" *100)
+print("Working with files")                          
 print("*" *100)
