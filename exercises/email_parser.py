@@ -25,8 +25,9 @@ try:
         if not line.startswith('From '):
             continue
         words = line.split()
-        email = words[1]
-        print(email)
+        if not len(words) < 1:
+            email = words[1]
+            print(email)
         count = count+1
 
 except FileNotFoundError:
