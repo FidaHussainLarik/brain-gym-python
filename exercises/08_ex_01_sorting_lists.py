@@ -4,7 +4,7 @@ You can download the sample data at http://www.py4e.com/code3/romeo.txt
 
 """
 
-file_name = input("Enter file name: ")
+file_name = input("Enter file name: ").strip().lower()
 
 try:
     file_handle = open(file_name)
