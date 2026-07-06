@@ -4,7 +4,7 @@ You can download the sample data at http://www.py4e.com/code3/romeo.txt
 
 """
 
-file_name = input("Enter file name: ").strip().lower()
+file_name = input("Enter file name: ")
 
 try:
     file_handle = open(file_name)
@@ -27,5 +27,4 @@ for word in lst_words:
         words_copy.append(word)
 
 words_copy.sort()
-
 print(words_copy)

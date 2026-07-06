@@ -1,12 +1,16 @@
+
+# Note: File used in this program: mbox-short.txt
 # 7.2 Write a program that prompts for a file name, then opens that file 
 # and reads through the file, looking for lines of the form:
 # X-DSPAM-Confidence:    0.8475
+
+
 
 fname = input("Enter file name: ")
 
 # We add '../data/' to the filename to access it from the /exercises folder
 try:
-    file_handle = open('../data/' + fname)
+    file_handle = open(fname)
 except FileNotFoundError:
     print(f"File '{fname}' not found in the data folder.")
     quit()
