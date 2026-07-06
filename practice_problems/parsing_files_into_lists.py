@@ -34,7 +34,3 @@ for line in file_handle:
     email = words[1]
     peices_of_email = email.split('@')
     print(peices_of_email[1])
-    
-list1 = [2,3,4,5,6]
-print("Maximum: ",max(list1))
-print("Minimum: ",min(list1))
