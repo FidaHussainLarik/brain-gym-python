@@ -25,6 +25,7 @@ try:
         if not line.startswith('From '):
             continue
         words = line.split()
+        # Gaurdian 
         if not len(words) < 1:
             email = words[1]
             print(email)
