@@ -1,6 +1,8 @@
 """
 Write a program to print top 10 most common words
 
+                Algorithm
+
                 Read file
                     ↓
                 Split each line into words
