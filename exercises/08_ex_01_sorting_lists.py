@@ -5,7 +5,8 @@ You can download the sample data at http://www.py4e.com/code3/romeo.txt
 """
 
 file_name = input("Enter file name: ")
-
+if len(file_name) < 1:
+    file_name = 'romeo.txt'
 try:
     file_handle = open(file_name)
 except:

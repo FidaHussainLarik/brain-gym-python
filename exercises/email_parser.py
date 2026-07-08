@@ -12,7 +12,7 @@ You can download the sample data at http://www.py4e.com/code3/mbox-short.txt
 
 file_name = input("Enter file name: ")
 
-if file_name !=  "mbox-short.txt":
+if len(file_name) <  1:
     file_name = "mbox-short.txt"
 
 try:
