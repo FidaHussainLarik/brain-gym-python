@@ -5,6 +5,9 @@
 9.4 Write a program to read through the mbox-short.txt and figure out who has sent the greatest number of mail messages. The program looks for 'From ' lines and takes the second word of those lines as the person who sent the mail. The program creates a Python dictionary that maps the sender's mail address to a count of the number of times they appear in the file. After the dictionary is produced, the program reads through the dictionary using a maximum loop to find the most prolific committer.
 """
 
+from pathlib import Path
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+
 file_name = input("Enter file:")
 if len(file_name) < 2:
     file_name = "mbox-short.txt"
@@ -12,7 +15,7 @@ if len(file_name) < 2:
 senders = dict()
 
 try:
-    file_handle = open(file_name)
+    file_handle = open(DATA_DIR/file_name)
     for line in file_handle:
         if not line.startswith('From '):
             continue

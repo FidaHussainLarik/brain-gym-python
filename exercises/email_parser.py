@@ -8,7 +8,8 @@ Hint: make sure not to include the lines that start with 'From:'. Also look at t
 You can download the sample data at http://www.py4e.com/code3/mbox-short.txt
 
 """
-
+from pathlib import Path
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
 file_name = input("Enter file name: ")
 
@@ -16,7 +17,7 @@ if len(file_name) <  1:
     file_name = "mbox-short.txt"
 
 try:
-    file_handle = open(file_name)
+    file_handle = open(DATA_DIR/file_name)
     count = 0
 
     for line in file_handle:

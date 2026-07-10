@@ -1,8 +1,10 @@
-
+from pathlib import Path
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
 counts = dict()
+
 try:
-    file_handle = open('words.txt')
+    file_handle = open(DATA_DIR/'words.txt')
 
     for line in file_handle:
         print(line)

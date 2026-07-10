@@ -3,7 +3,7 @@ They understand data collection, cleaning, and analysis, since every model depen
 They apply machine learning and deep learning to design models that solve real problems, using tools like Python, NumPy, and TensorFlow.
 
 Beyond building models, they turn them into usable products. 
-This means writing backend APIs with tools like FastAPI, connecting models to databases, and creating simple frontends with Streamlit or Gradio so others can interact with the AI.
+This means writing backend APIs with tools like FastAPI, connecting models to databases, and creating simpfle frontends with Streamlit or Gradio so others can interact with the AI.
 
 They also handle deployment, using platforms like Hugging Face Spaces or cloud servers, and understand MLOps basics such as version control, testing, and monitoring models in production. 
 Git and GitHub are essential here, since teams need to track changes and collaborate.

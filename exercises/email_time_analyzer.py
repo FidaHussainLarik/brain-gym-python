@@ -6,16 +6,16 @@ From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
 Once you have accumulated the counts for each hour, print out the counts, sorted by hour as shown below.
 
 """
+from pathlib import Path
+
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+
 
 file_name = input("Enter file:")
-if len(file_name) < 1:
-    file_name = "mbox-short.txt"
-
-
 
 try:
 
-    file_handle = open(file_name)
+    file_handle = open(DATA_DIR / file_name)
 
     # 'hour' stores hours only
     # 'time' stores hours, minute and seconds

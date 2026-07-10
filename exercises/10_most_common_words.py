@@ -16,9 +16,13 @@ Write a program to print top 10 most common words
                 Print first 10
 
 """
+
+from pathlib import Path
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+
 try:
     
-    file_handle = open('romeo.txt')
+    file_handle = open(DATA_DIR / "romeo.txt")
 
     counts = dict()
 
