@@ -675,13 +675,13 @@ X-Authentication-Warning: nakamura.uits.iupui.edu: apache set sender to gsilver@
 To: source@collab.sakaiproject.org
 From: gsilver@umich.edu
 Subject: [sakai] svn commit: r39761 - site/trunk/site-tool/tool/src/bundle
-X-Content-Type-Outer-Envelope: text/plain; charset=UTF-8
+X-Content Type Outer Envelope: text/plain; charset=UTF-8
 X-Content-Type-Message-Body: text/plain; charset=UTF-8
 Content-Type: text/plain; charset=UTF-8
-X-DSPAM-Result: Innocent
-X-DSPAM-Processed: Fri Jan  4 11:11:52 2008
-X-DSPAM-Confidence: 0.7605
-X-DSPAM-Probability: 0.0000
+X DSPAM Result: Innocent
+X DSPAM Processed: Fri Jan  4 11:11:52 2008
+X DSPAM Confidence: 0.7605
+X DSPAM Probability: 0.0000
 
 Details: http://source.sakaiproject.org/viewsvn/?view=rev&rev=39761
 
