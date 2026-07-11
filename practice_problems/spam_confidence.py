@@ -9,9 +9,12 @@ numlist = list()
 
 for line in file_handle:
     line = line.rstrip()
+    # Look for the line 'X-DSPAM-Confidence: ' and extact the numeric part from it
     stuff = re.findall("^X-DSPAM-Confidence: ([0-9.]+)",line)
     if stuff:
+        # If stuff contains more then one float value ignore it and continue
         if len(stuff) != 1: continue
+        # Number extracted from the line is added to numlist
         num = float(stuff[0])
         numlist.append(num)
         print(stuff)

@@ -182,9 +182,45 @@ X DSPAM Probability: 0.0000
 #     # \\S --> means non-blank character
 #     # \\+@ followed by a '@'
 
-for line in file_handle:
-    line = line.rstrip()
-    email = re.findall("^From (\\S+@\\S+)",line)
 
-    if email:
-        print(email[0])
+
+# for line in file_handle:
+#     line = line.rstrip()
+#     email = re.findall("^From (\\S+@\\S+)",line)
+
+#     if email:
+#         print(email[0])
+
+# Extracting the domain name from the emails
+
+
+# for line in file_handle:
+#     line = line.rstrip()
+
+#     if re.search('^From: ',line):
+#         # From gsilver@umich.edu Fri Jan  4 11:11:52 2008
+#         email = line.split()
+#         domain = email[1].split('@')
+#         print(domain[1])
+
+#     # Even more regex version
+
+#     if re.search('^From: ',line):
+#         domain = re.findall('@([^ ]*)',line)
+#         print(domain[0])
+    
+#     # Even cooler version of regex
+#     domain = re.findall('^From .*@([^ ]*)',line)
+#     if domain:
+#         print(domain[0])
+# 
+
+
+"""     Extracting amount in dollar from a file using Escape Characters     """
+
+x = "This is $100 rupess left after spending $400 from $500"
+y = re.findall(r"\$[0-9.]+",x)
+
+border()
+print("Amount in dollars: ",y)
+border()
