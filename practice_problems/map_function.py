@@ -22,4 +22,12 @@ print(nums)
 result = map(int, nums)
 
 
-print(list(result))
+# print(list(result))
+
+
+
+# enumerate
+students = ["Ali", "Sara", "Ahmed"]
+
+for index, student in enumerate(students,start=1):
+    print(index, student)
