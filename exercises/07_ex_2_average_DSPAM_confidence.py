@@ -1,16 +1,18 @@
 
 # Note: File used in this program: mbox-short.txt
+
 # 7.2 Write a program that prompts for a file name, then opens that file 
 # and reads through the file, looking for lines of the form:
 # X-DSPAM-Confidence:    0.8475
 
-
+from pathlib import Path
+DATA_PATH = Path(__file__).resolve().parent.parent/"data"
 
 fname = input("Enter file name: ")
 
 # We add '../data/' to the filename to access it from the /exercises folder
 try:
-    file_handle = open(fname)
+    file_handle = open(DATA_PATH/fname)
 except FileNotFoundError:
     print(f"File '{fname}' not found in the data folder.")
     quit()

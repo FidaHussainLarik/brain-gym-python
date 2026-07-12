@@ -3,12 +3,15 @@
 You can download the sample data at http://www.py4e.com/code3/romeo.txt
 
 """
+from pathlib import Path
+
+DATA_PATH = Path(__file__).resolve().parent.parent/"data"
 
 file_name = input("Enter file name: ")
 if len(file_name) < 1:
     file_name = 'romeo.txt'
 try:
-    file_handle = open(file_name)
+    file_handle = open(DATA_PATH/file_name)
 except:
     print("File 'romeo.txt' not found!")
     # Exit the program
