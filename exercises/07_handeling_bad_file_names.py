@@ -15,3 +15,6 @@ for line in file_handle:
         print(line)
         count = count+1
 print(f"There are {count} lines in the file")
+
+
+file_handle.close()

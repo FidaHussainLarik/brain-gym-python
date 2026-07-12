@@ -31,6 +31,8 @@ try:
             greatest_count = count
 
     print(mass_sender,greatest_count)
+    
+    file_handle.close()
 
 except FileNotFoundError:
     print("File not found!")

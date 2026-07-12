@@ -19,3 +19,6 @@ for line in file_handle:
         numlist.append(num)
         print(stuff)
 print("Maximum Spam Confidence: ",max(numlist))
+
+
+file_handle.close()

@@ -32,3 +32,6 @@ for word in lst_words:
 
 words_copy.sort()
 print(words_copy)
+
+
+file_handle.close()

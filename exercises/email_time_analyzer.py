@@ -37,6 +37,9 @@ try:
     for (key,value) in sorted(hours_count.items()):
         print(key,value)
 
+    file_handle.close()
+
+
 except FileNotFoundError:
     print("File not found!")
    

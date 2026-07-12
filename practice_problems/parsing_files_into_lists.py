@@ -34,3 +34,6 @@ for line in file_handle:
     email = words[1]
     peices_of_email = email.split('@')
     print(peices_of_email[1])
+
+
+file_handle.close()

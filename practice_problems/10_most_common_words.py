@@ -7,7 +7,9 @@ try:
 
     for line in file_handle:
         print(line)
+    file_handle.close()
 
+    
 except FileNotFoundError:
     print("File not found")
     

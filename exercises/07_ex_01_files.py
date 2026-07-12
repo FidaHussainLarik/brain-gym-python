@@ -15,3 +15,5 @@ except:
 content = file_handle.read()
 content = content.rstrip()
 print(content.upper())
+
+file_handle.close()

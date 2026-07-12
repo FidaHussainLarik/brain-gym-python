@@ -11,3 +11,4 @@ for line in file_handle:
 
 print()
 print("*" *100)
+file_handle.close()

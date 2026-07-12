@@ -30,3 +30,5 @@ for line in file_handle:
 x = "From gsilver@umich.edu Fri Jan  4 11:11:52 2008"    
 email = re.findall('^From (\\S+@\\S+)',x)
 print(email[0])
+
+file_handle.close()

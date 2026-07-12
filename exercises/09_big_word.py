@@ -23,6 +23,9 @@ try:
     print(f"Big word : {bigword}")
     print(f"Big count: {bigcount}")
 
+    
+    file_handle.close()
+
 except FileNotFoundError:
     print("File not found!")
     quit()

@@ -37,3 +37,6 @@ if count > 0:
     print(f"Average spam confidence: {total / count}")
 else:
     print("No lines found with X-DSPAM-Confidence")
+
+
+file_handle.close()

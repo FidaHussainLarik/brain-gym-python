@@ -225,3 +225,6 @@ y = re.findall(r"\$[0-9.]+",x)
 border()
 print("Amount in dollars: ",y)
 border()
+
+
+file_handle.close()

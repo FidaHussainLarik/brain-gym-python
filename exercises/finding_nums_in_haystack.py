@@ -16,7 +16,6 @@ except FileNotFoundError:
     quit()
 
 num_list = list()
-count = 0
 
 for line in file_handle:
     # Extract number from each line. Line may contains list of zero or many numbers
@@ -26,10 +25,11 @@ for line in file_handle:
     if not extracted_nums: 
         continue
 
-    #Converting string nums into integers
-    temp = list()
     for num in extracted_nums:
         num = int(num)
         # Adding them into a list of numbers
         num_list.append(num)
 print(f"Sum: {sum(num_list)}")
+
+
+file_handle.close()

@@ -43,7 +43,7 @@ try:
     for tup in sorted_tup_list[:10]:
         print(f"{(count+1)}: {tup}")
         count = count + 1
-   
+    file_handle.close()
 
 except FileNotFoundError:
     print("File not found")
