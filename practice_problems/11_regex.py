@@ -1,6 +1,7 @@
-from pathlib import Path
+
 import re
 
+from pathlib import Path
 DATA_FILES_DIR = Path(__file__).resolve().parent.parent/"data"
 
 
