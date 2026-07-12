@@ -219,9 +219,7 @@ X DSPAM Probability: 0.0000
 """     Extracting amount in dollar from a file using Escape Characters     """
 
 x = "This is $100 rupess left after spending $400 from $500"
-# y = re.findall(r"\$[0-9.]+",x)
-# 
-y = re.find_all(r"\$[0-9.]+",x)
+y = re.findall(r"\$[0-9.]+",x)
 
 border()
 print("Amount in dollars: ",y)
