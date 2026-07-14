@@ -32,24 +32,31 @@ def division(para1, para2):
         return "Error (Cannot divide by zero)"
     return para1 / para2
 
-separator()
-print("__________________________Calculator______________________\n")
+def main():
 
-num1 = get_float_input('Enter first number: ')
-operator = get_operator('Enter the operation you want to perform (+, -, *, /): ')
-num2 = get_float_input('Enter second number: ')
+    separator()
+    print("__________________________Calculator______________________\n")
 
-if operator == '+':
-    result = addition(num1, num2)
-    print(f"Addition of {num1} and {num2} is: {result}")
-elif operator == '-':
-    result = subtraction(num1, num2)
-    print(f"Subtraction of {num1} and {num2} is: {result}")
-elif operator == '*':
-    result = multiplication(num1, num2)
-    print(f"Product of {num1} and {num2} is: {result}")
-elif operator == '/':
-    result = division(num1, num2)
-    print(f"Division of {num1} and {num2} is: {result}")
-        
-separator()
+    num1 = get_float_input('Enter first number: ')
+    operator = get_operator('Enter the operation you want to perform (+, -, *, /): ')
+    num2 = get_float_input('Enter second number: ')
+
+    if operator == '+':
+        result = addition(num1, num2)
+        print(f"Addition of {num1} and {num2} is: {result}")
+    elif operator == '-':
+        result = subtraction(num1, num2)
+        print(f"Subtraction of {num1} and {num2} is: {result}")
+    elif operator == '*':
+        result = multiplication(num1, num2)
+        print(f"Product of {num1} and {num2} is: {result}")
+    elif operator == '/':
+        result = division(num1, num2)
+        print(f"Division of {num1} and {num2} is: {result}")
+            
+    separator()
+
+
+if __name__ == "__main__":
+    # Starts the main logic of the program
+    main()
