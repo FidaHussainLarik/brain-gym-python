@@ -17,6 +17,7 @@ soup = BeautifulSoup(html,'html.parser')
 # retrive all of the anshor tags
 tags = soup('a')
 for tag in tags:
+    print(tag)
     print(tag.get('href',None))
 
 
