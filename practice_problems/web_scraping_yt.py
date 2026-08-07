@@ -8,7 +8,7 @@ with open(DATA_DIR / "home.html") as html_file:
     content = html_file.read()
 
     #Print raw html content
-    print("\n\n----   1️  Print content of raw html ----\n")
+    print("\n\n---- 1️  Print content of raw html ----\n")
     # print(content)
 
     # Read -> parse -> review.
@@ -28,9 +28,35 @@ with open(DATA_DIR / "home.html") as html_file:
         # print(f"{index}. {tag}")
 
     # extracting tag headings
-    print("\n\nCourses on the webpage\n\n")
-    for index, tag in enumerate(courses_html_tags, start=1):
-            print(f"{index}. {tag.text}")
+    # print("\n\nCourses on the webpage\n\n")
+    # for index, tag in enumerate(courses_html_tags, start=1):
+    #         print(f"{index}. {tag.text}")
+
+    print("\n\n---- 4️ Parsing <div> tags ----\n\n")
+
+
+    course_cards = soup.find_all('div',class_ = 'card')
+
+    # Will return the entire 'div' tag code
+    # for course in course_cards:
+    #      print(course)
+
+    # return the h5 tag present inside the div tag
+    # for course in course_cards:
+    #     print(course.h5)
+
+    # return the h5 tag's text present inside the div tag (Which is the names of courses)
+    print("\n\n---- Extracting the course name and price from a html page ----\n\n")
+    
+    for course in course_cards:
+        if course.h5 and course.a:
+            course_name = course.h5.text
+            course_price = course.a.text
+            print(f"Course Name : {course_name}")
+            print(f"Course Price: {course_price}")
+        print()
+    
+        
     
     print()
    
